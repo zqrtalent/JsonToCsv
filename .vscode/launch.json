@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run debug",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "preLaunchTask": "PreRun Debug",
+      "externalConsole": false,
+      "osx": {
+        "type": "cppdbg",
+        "MIMode": "lldb",
+        "program": "${workspaceFolder}/bazel-out/darwin-dbg/bin/src/main",
+        "cwd": "${workspaceFolder}/bazel-out/darwin-dbg/bin/src/main.runfiles/__main__/"
+      }
+    },
+    {
+      "name": "Run release",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "preLaunchTask": "PreRun Release",
+      "externalConsole": false,
+      "osx": {
+        "type": "cppdbg",
+        "MIMode": "lldb",
+        "program": "${workspaceFolder}/bazel-out/darwin-opt/bin/src/main",
+        "cwd": "${workspaceFolder}/bazel-out/darwin-opt/bin/src/main.runfiles/__main__/"
+      }
+    }
+  ]
+}
